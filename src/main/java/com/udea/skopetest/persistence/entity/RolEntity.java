@@ -24,8 +24,8 @@ public class RolEntity {
 	@Column(name = "id_rol")
     private Long rolId;
 	
-	@Column(name = "nombre")
-    private String nombre;
+	@Column(name = "rolNombre")
+    private String rolNombre;
 	
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "rol")
     private Set<UsuarioRolEntity> usuarioRoles = new HashSet<>();

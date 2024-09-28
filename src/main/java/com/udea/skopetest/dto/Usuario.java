@@ -1,5 +1,7 @@
 package com.udea.skopetest.dto;
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,14 +9,12 @@ import lombok.Setter;
 @Setter
 public class Usuario {
 	
-	private Long id;
-	private String username;
-    private String password;
+	private Long identificacion;
     private String nombre;
     private String apellido;
     private String email;
-    private String telefono;
-    private boolean enabled = true; 
-    private String perfil;
+    private String username;
+    private String password;
+    private List<Rol> listaRoles;
 	
 }
