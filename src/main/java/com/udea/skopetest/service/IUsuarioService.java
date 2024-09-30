@@ -1,6 +1,10 @@
 package com.udea.skopetest.service;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
+
+import org.springframework.data.domain.Pageable;
 
 import com.udea.skopetest.dto.Usuario;
 import com.udea.skopetest.persistence.entity.UsuarioEntity;
@@ -14,4 +18,7 @@ public interface IUsuarioService {
 	
 	String actualizarUsuario(Usuario usuario);
 
+	Map<String, Object> listarUsuarios(Pageable pageable);
+	
+	List<Usuario> listarUsuarios();
 }
